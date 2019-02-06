@@ -1,0 +1,22 @@
+{
+    "name": "Tab You Later",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Save tabs to a to-do list",
+    "homepage_url": "http://nerdofsteel.com",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "default_locale": "en",
+    "browser_action": {
+        "default_title": "Tab You Later",
+        "default_popup": "src/index.html"
+    },
+    "background": {
+        "page": "src/background.html",
+        "persistent": true
+    },
+    "permissions": ["contextMenus", "storage", "tabs"]
+}

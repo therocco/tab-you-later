@@ -1,0 +1,93 @@
+/**
+ * Tab You Later
+ * @author: Rocco Augusto
+ */
+
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,800");
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #efefef;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #d8d8d8;
+}
+
+body {
+    --list-gutter: 10px 0;
+
+    box-sizing: border-box;
+    width: 380px;
+    height: 420px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    background: #efefef;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 48px;
+    outline: 1px solid red;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+li {
+    padding: var(--list-gutter);
+    margin: var(--list-gutter);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a {
+    display: inline-block;
+    max-width: calc(100% - 45px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li img {
+    height: 16px;
+    width: auto;
+    vertical-align: top;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 22px;
+    text-align: center;
+    line-height: calc(100vh - 60px);
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: #666;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+.buttons {
+    text-align: center;
+}
